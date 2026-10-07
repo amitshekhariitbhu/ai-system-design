@@ -3029,7 +3029,7 @@ Tools: PromptLayer, Humanloop, LangSmith Prompts, Latitude.
 
 We never hardcode prompts in our application code in production. We pull them from the prompt management system, just like we pull config from a config service.
 
-A few prompt techniques come up again and again in production. [**Chain-of-Thought (CoT) Prompting**](https://outcomeschool.com/blog/how-does-chain-of-thought-prompting-work) asks the model to write out its reasoning steps before giving the final answer, which improves accuracy on multi-step problems but costs more output tokens. [**Prompt Chaining**](https://outcomeschool.com/blog/how-does-prompt-chaining-work) breaks one big task into smaller prompts, where the output of one prompt becomes the input of the next, so each step is small, testable, and reliable.
+A few prompt techniques come up again and again in production. [**Chain-of-Thought (CoT) Prompting**](https://outcomeschool.com/blog/how-does-chain-of-thought-prompting-work) asks the model to write out its reasoning steps before giving the final answer, which improves accuracy on multi-step problems but costs more output tokens. [**Tree of Thoughts**](https://outcomeschool.com/blog/how-does-tree-of-thoughts-work) goes one step further: the model explores many reasoning paths, judges each step, and backtracks from the bad ones, which helps on search-like problems but costs many more LLM calls. [**Prompt Chaining**](https://outcomeschool.com/blog/how-does-prompt-chaining-work) breaks one big task into smaller prompts, where the output of one prompt becomes the input of the next, so each step is small, testable, and reliable.
 
 ### Programmatic Prompting with DSPy
 
