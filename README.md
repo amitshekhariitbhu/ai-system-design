@@ -1266,6 +1266,8 @@ Here, we can notice that the fake answer is much closer to the real answer, so t
 
 A good practice is to test both plain search and HyDE on the same set of questions, and keep the one that finds better chunks for our data.
 
+HyDE is not the only way to transform the query. With **Query Rewriting**, an LLM rewrites the user's question into a clear, standalone search query before retrieval, which helps a lot with follow-up and vague questions. With **Multi-Query Retrieval**, an LLM generates several versions of the question from different angles, we search with each of them, and we merge the results using Reciprocal Rank Fusion (RRF). We have a detailed blog on [How do Query Rewriting and Multi-Query Retrieval work?](https://outcomeschool.com/blog/how-do-query-rewriting-and-multi-query-retrieval-work)
+
 ### Reranking
 
 The first retrieval is fast but not very accurate. We pull, say, the top 50 chunks. Then we use a smaller, slower, but very accurate model called a [**reranker**](https://outcomeschool.com/blog/how-does-a-reranker-work) to score these 50 chunks again. We keep only the top 5.
