@@ -2717,7 +2717,7 @@ When designing an AI system, ask: which parts of the workload can run on the dev
 
 LLMs can:
 
-- Make up facts (hallucinate)
+- Make up facts ([hallucinate](https://outcomeschool.com/blog/why-do-llms-hallucinate-the-token-level-explanation))
 - Leak sensitive info from the prompt
 - Generate harmful content
 - Be tricked by malicious prompts ([prompt injection](https://outcomeschool.com/blog/prompt-injection-in-llms))
