@@ -2653,6 +2653,8 @@ We have a detailed blog on [Why does the time-to-first-audio matter more than to
 
 We have a detailed blog on [How does sentence chunking feed LLM output into TTS faster?](https://outcomeschool.com/blog/sentence-chunking-for-tts) that explains how the agent cuts the streamed tokens into sentences and sends each one to the TTS while the LLM is still writing.
 
+We have a detailed blog on [How does a TTS model start speaking before the full sentence arrives?](https://outcomeschool.com/blog/streaming-tts) that explains how a small lookahead of a few words, and newer models that read text and speak at the same time, let the TTS start speaking early while still sounding natural.
+
 Other voice-specific concerns:
 
 - **Voice activity detection (VAD):** Knowing when the user has stopped speaking so the model can start thinking. We have a detailed blog on [turn-taking in a voice AI agent](https://outcomeschool.com/blog/what-is-turn-taking-in-a-voice-ai-agent) that explains end-of-turn detection, semantic turn detection, and backchannels.
