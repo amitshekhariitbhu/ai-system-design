@@ -2651,6 +2651,8 @@ We have a detailed blog on [How does the voice-to-voice latency of a voice agent
 
 We have a detailed blog on [Why does the time-to-first-audio matter more than total response time?](https://outcomeschool.com/blog/time-to-first-audio) that explains why the user feels only the silence before the first sound, and how streaming hides the rest of the reply inside the listening time.
 
+We have a detailed blog on [How does sentence chunking feed LLM output into TTS faster?](https://outcomeschool.com/blog/sentence-chunking-for-tts) that explains how the agent cuts the streamed tokens into sentences and sends each one to the TTS while the LLM is still writing.
+
 Other voice-specific concerns:
 
 - **Voice activity detection (VAD):** Knowing when the user has stopped speaking so the model can start thinking. We have a detailed blog on [turn-taking in a voice AI agent](https://outcomeschool.com/blog/what-is-turn-taking-in-a-voice-ai-agent) that explains end-of-turn detection, semantic turn detection, and backchannels.
