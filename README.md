@@ -2667,6 +2667,8 @@ There are two big ways to build a voice agent: the **cascaded pipeline** (STT ->
 
 We use the **cascaded pipeline** when we need control, compliance, tools, and low cost. This is the default for most business use cases. We use **speech-to-speech** when the natural feel of the conversation is the product itself.
 
+We have a detailed blog on [Cascaded vs Speech-to-Speech: How to choose the right voice agent architecture?](https://outcomeschool.com/blog/cascaded-vs-speech-to-speech) that also explains the half-cascade middle path and how to pick the right one for our use case.
+
 We have a complete end-to-end design, with estimation, architecture, turn detection, telephony, scaling, and edge cases, in our detailed blog on [how to Design a Real-Time Voice AI Agent](https://outcomeschool.com/blog/design-a-real-time-voice-ai-agent).
 
 Voice AI is showing up in more and more products in 2026, from phone bots to live meeting assistants, so the design patterns above are worth knowing.
