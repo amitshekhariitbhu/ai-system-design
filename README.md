@@ -2657,6 +2657,8 @@ We have a detailed blog on [How does a TTS model start speaking before the full 
 
 We have a detailed blog on [How does speculative LLM generation start replying before the user finishes?](https://outcomeschool.com/blog/speculative-generation-in-voice-agents) that explains how the agent sends the user's words to the LLM before the end of the turn is confirmed, keeps the reply hidden in a buffer, and plays it only if the final words match, so the LLM time hides inside the silence wait.
 
+We have a detailed blog on [How do filler phrases hide latency in a voice agent?](https://outcomeschool.com/blog/filler-phrases-in-voice-agents) that explains when the agent says a short line like "Let me check that for you" while a tool call runs, the ways to produce it, and how to keep it in the conversation history.
+
 Other voice-specific concerns:
 
 - **Voice activity detection (VAD):** Knowing when the user has stopped speaking so the model can start thinking. We have a detailed blog on [turn-taking in a voice AI agent](https://outcomeschool.com/blog/what-is-turn-taking-in-a-voice-ai-agent) that explains end-of-turn detection, semantic turn detection, and backchannels.
