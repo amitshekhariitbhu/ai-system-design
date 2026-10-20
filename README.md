@@ -2655,6 +2655,8 @@ We have a detailed blog on [How does sentence chunking feed LLM output into TTS 
 
 We have a detailed blog on [How does a TTS model start speaking before the full sentence arrives?](https://outcomeschool.com/blog/streaming-tts) that explains how a small lookahead of a few words, and newer models that read text and speak at the same time, let the TTS start speaking early while still sounding natural.
 
+We have a detailed blog on [How does speculative LLM generation start replying before the user finishes?](https://outcomeschool.com/blog/speculative-generation-in-voice-agents) that explains how the agent sends the user's words to the LLM before the end of the turn is confirmed, keeps the reply hidden in a buffer, and plays it only if the final words match, so the LLM time hides inside the silence wait.
+
 Other voice-specific concerns:
 
 - **Voice activity detection (VAD):** Knowing when the user has stopped speaking so the model can start thinking. We have a detailed blog on [turn-taking in a voice AI agent](https://outcomeschool.com/blog/what-is-turn-taking-in-a-voice-ai-agent) that explains end-of-turn detection, semantic turn detection, and backchannels.
