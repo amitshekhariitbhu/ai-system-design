@@ -2645,6 +2645,8 @@ Here, we can notice that there is no single stage that we can ignore. A few rule
 - **Pre-generate the greeting.** The first line is always the same, so we cache its audio and play it instantly.
 - **Fillers buy time.** A quick "Sure, let me check" makes a 2-second tool call feel fine.
 
+We have a detailed blog on [How do you build a latency budget for a voice AI agent?](https://outcomeschool.com/blog/voice-agent-latency-budget) that explains how to pick the target, split it across every stage, measure the real numbers at p50 and p95, and cut the biggest delay first.
+
 Other voice-specific concerns:
 
 - **Voice activity detection (VAD):** Knowing when the user has stopped speaking so the model can start thinking. We have a detailed blog on [turn-taking in a voice AI agent](https://outcomeschool.com/blog/what-is-turn-taking-in-a-voice-ai-agent) that explains end-of-turn detection, semantic turn detection, and backchannels.
