@@ -2659,6 +2659,8 @@ We have a detailed blog on [How does speculative LLM generation start replying b
 
 We have a detailed blog on [How do filler phrases hide latency in a voice agent?](https://outcomeschool.com/blog/filler-phrases-in-voice-agents) that explains when the agent says a short line like "Let me check that for you" while a tool call runs, the ways to produce it, and how to keep it in the conversation history.
 
+We have a detailed blog on [How does a voice agent hide the delay of a slow tool call?](https://outcomeschool.com/blog/slow-tool-calls-in-voice-agents) that explains how the agent speaks a short line right away, gives progress updates during a long wait, keeps talking while the tool runs in the background, starts read-only tools early, and handles a timeout.
+
 Other voice-specific concerns:
 
 - **Voice activity detection (VAD):** Knowing when the user has stopped speaking so the model can start thinking. We have a detailed blog on [turn-taking in a voice AI agent](https://outcomeschool.com/blog/what-is-turn-taking-in-a-voice-ai-agent) that explains end-of-turn detection, semantic turn detection, and backchannels.
