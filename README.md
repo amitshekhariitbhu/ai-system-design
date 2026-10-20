@@ -2647,6 +2647,8 @@ Here, we can notice that there is no single stage that we can ignore. A few rule
 
 We have a detailed blog on [How do you build a latency budget for a voice AI agent?](https://outcomeschool.com/blog/voice-agent-latency-budget) that explains how to pick the target, split it across every stage, measure the real numbers at p50 and p95, and cut the biggest delay first.
 
+We have a detailed blog on [How does the voice-to-voice latency of a voice agent get measured?](https://outcomeschool.com/blog/voice-to-voice-latency) that explains how to measure this number correctly with a two-channel recording of the call and track it at p50 and p95 over many calls.
+
 Other voice-specific concerns:
 
 - **Voice activity detection (VAD):** Knowing when the user has stopped speaking so the model can start thinking. We have a detailed blog on [turn-taking in a voice AI agent](https://outcomeschool.com/blog/what-is-turn-taking-in-a-voice-ai-agent) that explains end-of-turn detection, semantic turn detection, and backchannels.
