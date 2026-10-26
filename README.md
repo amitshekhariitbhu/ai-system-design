@@ -2768,6 +2768,8 @@ A common pattern is **hybrid AI**: the small on-device model handles easy and pr
 
 Here, we can see that most questions get answered right on the device, quickly and privately. Only the difficult ones travel to the cloud. A voice assistant works exactly like this: "set a timer for ten minutes" never touches the internet, but "write me a poem about the monsoon" goes to the cloud. And when the network is gone, the device can still handle the simple things instead of failing completely. We have a detailed blog on [Cloud vs On-device Model Deployment](https://outcomeschool.com/blog/cloud-vs-on-device-model-deployment) that compares both in depth.
 
+The device can also help train the model without giving away its data. With federated learning, each device trains the shared model on its own data and sends back only the learned update, never the raw data. We have a detailed blog on [How does Federated Learning train without raw data?](https://outcomeschool.com/blog/federated-learning) that explains this step by step.
+
 When designing an AI system, ask: which parts of the workload can run on the device?
 
 ## Guardrails and Safety
