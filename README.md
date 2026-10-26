@@ -2621,6 +2621,8 @@ In production, we use **bidirectional streaming**: STT streams text out as the u
 
 The transport is usually **[WebRTC](https://outcomeschool.com/blog/voice-and-video-call)** (a browser-native protocol designed for real-time audio and video), **WebSocket** (a long-lived two-way connection), or **SIP** (the standard protocol used by phone networks to set up voice calls). Plain HTTP cannot keep up.
 
+We have a detailed blog on [What are audio frames and chunk sizes in a real-time voice pipeline?](https://outcomeschool.com/blog/audio-frames-and-chunk-sizes) that explains how the audio is cut into small frames, how to calculate their size, and how the chunk size trades delay against overhead.
+
 Modern providers expose **Realtime APIs** that bundle all three: OpenAI Realtime API, Amazon Polly Bidirectional Streaming, Deepgram Voice Agent, Inworld, Soniox, x.ai Voice. These collapse STT, LLM, and TTS into a single low-latency pipeline.
 
 Latency targets in voice AI are tight. End-to-end speech-to-speech latency under 800 ms feels conversational. Above 1.5 s feels broken. This is much tighter than text chat.
