@@ -2631,6 +2631,8 @@ We have a detailed blog on [How does the Opus codec compress voice for real-time
 
 We also have a detailed blog on [How does a jitter buffer keep voice audio smooth over a bad network?](https://outcomeschool.com/blog/jitter-buffer) that explains how the jitter buffer holds and reorders the incoming packets, how a fixed jitter buffer differs from an adaptive one, and how late and lost packets are handled.
 
+We have a detailed blog on [How does packet loss concealment hide missing audio?](https://outcomeschool.com/blog/packet-loss-concealment) that explains how the receiver fills a lost packet with a believable sound, how the approaches evolved from playing silence to repeating the pitch of the voice, and how codecs like Opus and neural networks make a better guess.
+
 Modern providers expose **Realtime APIs** that bundle all three: OpenAI Realtime API, Amazon Polly Bidirectional Streaming, Deepgram Voice Agent, Inworld, Soniox, x.ai Voice. These collapse STT, LLM, and TTS into a single low-latency pipeline.
 
 Latency targets in voice AI are tight. End-to-end speech-to-speech latency under 800 ms feels conversational. Above 1.5 s feels broken. This is much tighter than text chat.
