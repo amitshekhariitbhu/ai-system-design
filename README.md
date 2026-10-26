@@ -2885,6 +2885,8 @@ Let me tabulate the defense checklist in the order of importance.
 
 That includes web pages, emails, documents, search results, tool outputs, database rows written by users, and even the output of another AI.
 
+The same care applies to the documents in our RAG knowledge base and to the data we train or fine-tune on. An attacker who can add text there can poison what the model learns or retrieves. We have a detailed blog on [What is data poisoning in AI?](https://outcomeschool.com/blog/data-poisoning) that explains this attack and how we defend against it.
+
 ### AI Red Teaming
 
 Now, let's move from runtime defense to offline defense. Guardrails are the runtime defense. **Red teaming** is the offline process of trying to break our own system before an attacker does.
