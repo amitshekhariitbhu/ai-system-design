@@ -1194,7 +1194,7 @@ A real document parsing pipeline does the following:
 
 - **Format detection:** Figure out what kind of file this is (PDF, image, HTML, DOCX, audio, etc.).
 - **Layout-aware parsing:** Preserve headings, lists, columns, and reading order. A two-column PDF naively flattened becomes nonsense.
-- **OCR (Optical Character Recognition):** For scanned PDFs and images, convert pixels to text. Quality depends on image clarity, font, language, and skew, so preprocessing (deskewing, denoising) matters as much as the OCR engine.
+- **OCR (Optical Character Recognition):** For scanned PDFs and images, convert pixels to text. Quality depends on image clarity, font, language, and skew, so preprocessing (deskewing, denoising) matters as much as the OCR engine. We have a detailed blog on [How does OCR with Deep Learning work?](https://outcomeschool.com/blog/optical-character-recognition-ocr).
 - **Table extraction:** Tables are the single hardest part. We want to keep cell boundaries and headers, often emitting HTML or a row/column model instead of flattening the table into prose. Tables usually carry the most valuable data, so this step is critical.
 - **Image and figure handling:** Caption images, run a vision model to describe charts, store the image in blob storage, and link it from the chunk.
 - **Metadata enrichment:** Add document title, author, date, source URL, page number, section heading. This metadata becomes filters for retrieval later.
