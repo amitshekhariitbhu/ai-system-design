@@ -895,7 +895,7 @@ To put this into perspective with real numbers - if the model is generating 100 
 
 We cache only the Keys and Values, not the Queries. During autoregressive generation, the Query is only needed for the **current token** being generated. Once the prediction is done, that Query is no longer needed. But the Key and Value of every past token are needed at **every future step**.
 
-KV Cache makes generation much faster, but it has to sit in memory the entire time the conversation is active. A long conversation can use gigabytes of KV cache. This is why we cannot serve too many long conversations at the same time on the same machine.
+KV Cache makes generation much faster, but it has to sit in memory the entire time the conversation is active. A long conversation can use gigabytes of KV cache. This is why we cannot serve too many long conversations at the same time on the same machine. We have a detailed blog on [How does an LLM use GPU memory?](https://outcomeschool.com/blog/llm-gpu-memory) that explains how the weights, the KV cache, and the overhead add up to the total GPU memory.
 
 To manage the KV Cache memory more efficiently, modern inference servers use **[Paged Attention](https://outcomeschool.com/blog/paged-attention-in-llms)** - the same idea operating systems use to manage memory. Instead of reserving one big block of memory upfront for each request (which wastes a lot of memory because we do not know in advance how long the response will be), Paged Attention allocates small fixed-size **pages** of KV cache as the response grows.
 
