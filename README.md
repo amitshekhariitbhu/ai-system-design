@@ -1525,7 +1525,7 @@ To learn RAG, Vector Databases, embeddings, and retrieval pipelines end to end w
 
 ## Context Window Management
 
-Every LLM has a maximum context window. GPT-5.5 has up to 400k tokens. Claude Sonnet 4.6 and Opus 4.8 have up to 1 million tokens. Some models go even further. But all of them are finite.
+Every LLM has a maximum [context window](https://outcomeschool.com/blog/context-window). GPT-5.5 has up to 400k tokens. Claude Sonnet 4.6 and Opus 4.8 have up to 1 million tokens. Some models go even further. But all of them are finite.
 
 In production, we hit context limits all the time:
 
