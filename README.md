@@ -2851,7 +2851,7 @@ Now, let's move from runtime defense to offline defense. Guardrails are the runt
 
 To put it simply, **AI Red Teaming is adversarial testing of our AI system to find vulnerabilities before they reach production.**
 
-It is to AI what penetration testing is to security. We hire (or simulate) attackers to throw every known jailbreak, prompt injection, and edge case at the system, and we measure how often the system fails.
+It is to AI what penetration testing is to security. We hire (or simulate) attackers to throw every known [jailbreak](https://outcomeschool.com/blog/jailbreaking-in-llms), prompt injection, and edge case at the system, and we measure how often the system fails.
 
 Common things a red team tests for:
 
