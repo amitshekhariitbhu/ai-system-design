@@ -1746,7 +1746,7 @@ In real production, our app does not call OpenAI, Anthropic, or our self-hosted 
 
 Put simply, **an AI Gateway is a reverse proxy specialized for LLM traffic.**
 
-A regular API gateway routes HTTP requests. An AI Gateway also understands tokens, prompts, streaming, and cost. It is the single point where every LLM call in our company flows through.
+A regular API gateway routes HTTP requests. An AI Gateway also understands tokens, prompts, streaming, and cost. It is the single point where every LLM call in our company flows through. We have a detailed blog on [How does an LLM Gateway work?](https://outcomeschool.com/blog/llm-gateway) that explains what happens to a request step by step inside the gateway.
 
 A typical AI Gateway sits like this:
 
