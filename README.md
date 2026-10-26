@@ -2645,6 +2645,8 @@ We also have a detailed blog on [How does voicemail and answering machine detect
 
 We have a detailed blog on [How does an outbound calling voice agent work?](https://outcomeschool.com/blog/outbound-calling-voice-agent) that explains how the agent decides whom to call and when, how the call reaches a phone through a telephony provider, how it tells a human from a voicemail, how it opens and runs the conversation, and how every call ends with a saved outcome and a plan for the next try.
 
+We also have a detailed blog on [How does a voice agent transfer a call to a human with context?](https://outcomeschool.com/blog/call-transfer-with-context) that explains how the agent decides when a human is needed, what context it packages with an LLM-written summary, how a cold transfer differs from a warm transfer, and how the call and the context reach the human together through SIP headers and a context store.
+
 Modern providers expose **Realtime APIs** that bundle all three: OpenAI Realtime API, Amazon Polly Bidirectional Streaming, Deepgram Voice Agent, Inworld, Soniox, x.ai Voice. These collapse STT, LLM, and TTS into a single low-latency pipeline.
 
 Latency targets in voice AI are tight. End-to-end speech-to-speech latency under 800 ms feels conversational. Above 1.5 s feels broken. This is much tighter than text chat.
