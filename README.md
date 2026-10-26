@@ -2623,6 +2623,8 @@ The transport is usually **[WebRTC](https://outcomeschool.com/blog/voice-and-vid
 
 We have a detailed blog on [What are audio frames and chunk sizes in a real-time voice pipeline?](https://outcomeschool.com/blog/audio-frames-and-chunk-sizes) that explains how the audio is cut into small frames, how to calculate their size, and how the chunk size trades delay against overhead.
 
+We also have a detailed blog on [Why do sample rates like 8 kHz, 16 kHz, and 24 kHz matter for voice agents?](https://outcomeschool.com/blog/sample-rates-for-voice-agents) that explains why phone audio arrives at 8 kHz, why speech recognition expects 16 kHz, why voice output often uses 24 kHz, and what goes wrong when these sample rates do not match.
+
 Modern providers expose **Realtime APIs** that bundle all three: OpenAI Realtime API, Amazon Polly Bidirectional Streaming, Deepgram Voice Agent, Inworld, Soniox, x.ai Voice. These collapse STT, LLM, and TTS into a single low-latency pipeline.
 
 Latency targets in voice AI are tight. End-to-end speech-to-speech latency under 800 ms feels conversational. Above 1.5 s feels broken. This is much tighter than text chat.
