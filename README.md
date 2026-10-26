@@ -2639,6 +2639,8 @@ We have a detailed blog on [How do SIP and RTP carry a phone call to a voice age
 
 We also have a detailed blog on [Why does phone audio make speech recognition worse?](https://outcomeschool.com/blog/phone-audio-and-speech-recognition) that explains how a phone call cuts off the high sounds of our voice, how the codec, lost packets, and noise damage the audio further, why a model trained on clean audio struggles with phone audio, and what we can do to make speech recognition work better on phone calls.
 
+We have a detailed blog on [How does DTMF keypad input work in a voice agent?](https://outcomeschool.com/blog/dtmf-in-voice-agents) that explains how every key press becomes two tones, how the tones reach the agent inside the audio or as separate events, how the agent collects the digits and passes them to the LLM, and how sensitive digits like a PIN stay away from the LLM.
+
 Modern providers expose **Realtime APIs** that bundle all three: OpenAI Realtime API, Amazon Polly Bidirectional Streaming, Deepgram Voice Agent, Inworld, Soniox, x.ai Voice. These collapse STT, LLM, and TTS into a single low-latency pipeline.
 
 Latency targets in voice AI are tight. End-to-end speech-to-speech latency under 800 ms feels conversational. Above 1.5 s feels broken. This is much tighter than text chat.
