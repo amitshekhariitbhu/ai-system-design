@@ -2696,6 +2696,7 @@ Other voice-specific concerns:
 - **Diarization:** Knowing which speaker said what in a multi-person call.
 - **Noise and accent robustness:** STT quality drops fast in noisy environments and with non-standard accents.
 - **Spoken replies:** The caller hears the reply instead of reading it, so markdown, bullet points, links, and long paragraphs do not work. We have a detailed blog on [How do you write a system prompt for a voice agent, not a chat bot?](https://outcomeschool.com/blog/voice-agent-system-prompt) that explains how the system prompt asks for short, plain replies, numbers written the way we speak them, one question at a time, care for mishearing, and a short line while a tool runs.
+- **Tool calls on a call:** The agent often has to look up an order or book a slot while the caller is on the line. We have a detailed blog on [How does function calling work in a voice AI agent?](https://outcomeschool.com/blog/function-calling-in-voice-agents) that explains how the LLM picks a function and its inputs from what the caller said, how our code runs it and sends the result back, and what changes when the input is a voice, like misheard values, confirmation before risky actions, and silence while the function runs.
 
 There are two big ways to build a voice agent: the **cascaded pipeline** (STT -> LLM -> TTS) and a single **speech-to-speech** model that takes audio in and gives audio out. Let me tabulate the key differences for your better understanding.
 
