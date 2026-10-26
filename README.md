@@ -946,7 +946,7 @@ These approaches can be combined. A smaller KV Cache means more users per GPU, l
 
 ### Prompt Cache
 
-Many apps send the same long system prompt with every request.
+Many apps send the same long [system prompt](https://outcomeschool.com/blog/system-prompt) with every request.
 
 Example: A customer support bot has a 3000-token system prompt that explains the rules. Every user message goes with this same system prompt.
 
