@@ -1095,7 +1095,7 @@ Regular databases store rows and columns. They are good for exact-match queries.
 
 But in AI, we deal with embeddings. An [**embedding**](https://outcomeschool.com/blog/what-are-embeddings) is a long list of numbers (typically 768, 1024, 1536, or 3072 numbers depending on the model) that represents a piece of text in a way that captures its meaning. Two pieces of text that mean similar things get numbers that sit close together. This is what lets us do [**Semantic Search**](https://outcomeschool.com/blog/how-does-semantic-search-work), which means searching by meaning instead of by exact words. Images can be turned into embeddings too, and we have a detailed blog on [how Image Embeddings work](https://outcomeschool.com/blog/how-do-image-embeddings-work).
 
-When we want to find similar pieces of text, we cannot use SQL `WHERE`. We have to compute the similarity between two embeddings using a math formula like **cosine similarity** (which measures how close the two vectors point in the same direction) or **dot product** (which multiplies and sums the numbers in the two vectors). Both give a single similarity score we can sort by.
+When we want to find similar pieces of text, we cannot use SQL `WHERE`. We have to compute the similarity between two embeddings using a math formula like [**cosine similarity**](https://outcomeschool.com/blog/cosine-similarity) (which measures how close the two vectors point in the same direction) or **dot product** (which multiplies and sums the numbers in the two vectors). Both give a single similarity score we can sort by.
 
 A normal database is too slow for this. So we use a [**Vector Database**](https://outcomeschool.com/blog/how-does-a-vector-database-work).
 
