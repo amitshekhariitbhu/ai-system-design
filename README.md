@@ -3175,7 +3175,7 @@ Fine-tuning needs a separate infrastructure:
 
 ### Training Cluster
 
-A bunch of GPU machines connected over a fast network. Tensor and pipeline parallelism are used to train big models across many GPUs.
+A bunch of GPU machines connected over a fast network. Tensor and pipeline parallelism are used to train big models across many GPUs. We have a detailed blog on [How does distributed training work?](https://outcomeschool.com/blog/distributed-training).
 
 ### Training Data Pipeline
 
