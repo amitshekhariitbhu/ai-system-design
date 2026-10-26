@@ -2621,6 +2621,8 @@ In production, we use **bidirectional streaming**: STT streams text out as the u
 
 The transport is usually **[WebRTC](https://outcomeschool.com/blog/voice-and-video-call)** (a browser-native protocol designed for real-time audio and video), **WebSocket** (a long-lived two-way connection), or **SIP** (the standard protocol used by phone networks to set up voice calls). Plain HTTP cannot keep up.
 
+To see how these transports differ, we have a detailed blog on [How do WebRTC and WebSocket differ for voice AI agents?](https://outcomeschool.com/blog/webrtc-vs-websocket-for-voice-ai) that explains why a lost packet freezes the audio on a WebSocket, how WebRTC keeps the delay low with UDP, a jitter buffer, and echo cancellation, and when to use which one.
+
 We have a detailed blog on [What are audio frames and chunk sizes in a real-time voice pipeline?](https://outcomeschool.com/blog/audio-frames-and-chunk-sizes) that explains how the audio is cut into small frames, how to calculate their size, and how the chunk size trades delay against overhead.
 
 We also have a detailed blog on [Why do sample rates like 8 kHz, 16 kHz, and 24 kHz matter for voice agents?](https://outcomeschool.com/blog/sample-rates-for-voice-agents) that explains why phone audio arrives at 8 kHz, why speech recognition expects 16 kHz, why voice output often uses 24 kHz, and what goes wrong when these sample rates do not match.
