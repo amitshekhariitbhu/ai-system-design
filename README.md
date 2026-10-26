@@ -1064,7 +1064,7 @@ def cascade(query: str) -> str:
     return frontier_llm(query)
 ```
 
-Here, each step either returns the answer or escalates to the next LLM. The `is_confident` check can be a self-rating from the LLM, a verifier model, or a simple heuristic like the presence of "I do not know". Most queries get solved by the cheapest LLM. The hard queries pay for two or three calls.
+Here, each step either returns the answer or escalates to the next LLM. The `is_confident` check can be a self-rating from the LLM, a verifier model, or a simple heuristic like the presence of "I do not know". Another option is the average logprob of the answer tokens, which tells us how sure the LLM was. We have a detailed blog on [What are Log Probabilities (Logprobs) in LLMs?](https://outcomeschool.com/blog/logprobs-in-llms) that explains this. Most queries get solved by the cheapest LLM. The hard queries pay for two or three calls.
 
 Let me tabulate the differences between the routing strategies for your better understanding so that you can decide which one to use based on your use case.
 
