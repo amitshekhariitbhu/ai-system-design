@@ -2633,6 +2633,8 @@ We also have a detailed blog on [How does a jitter buffer keep voice audio smoot
 
 We have a detailed blog on [How does packet loss concealment hide missing audio?](https://outcomeschool.com/blog/packet-loss-concealment) that explains how the receiver fills a lost packet with a believable sound, how the approaches evolved from playing silence to repeating the pitch of the voice, and how codecs like Opus and neural networks make a better guess.
 
+We also have a detailed blog on [How does a voice AI agent answer a phone call?](https://outcomeschool.com/blog/phone-calls-in-voice-agents) that explains how a call travels from the phone network through a telephony provider to our server, how the caller's voice arrives as a stream of small audio chunks over a WebSocket, how the agent speaks back into the call and handles interruptions, and how the call ends or gets transferred to a human.
+
 Modern providers expose **Realtime APIs** that bundle all three: OpenAI Realtime API, Amazon Polly Bidirectional Streaming, Deepgram Voice Agent, Inworld, Soniox, x.ai Voice. These collapse STT, LLM, and TTS into a single low-latency pipeline.
 
 Latency targets in voice AI are tight. End-to-end speech-to-speech latency under 800 ms feels conversational. Above 1.5 s feels broken. This is much tighter than text chat.
