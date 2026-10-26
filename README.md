@@ -1142,6 +1142,8 @@ To solve this, we use **RAG (Retrieval Augmented Generation)**.
 2. **Augmented:** Add those pieces into the prompt as context.
 3. **Generation:** Let the LLM generate the answer using that context.
 
+We have a detailed blog on [How does RAG work?](https://outcomeschool.com/blog/retrieval-augmented-generation-rag) that explains the full flow step by step.
+
 Let's see the flow.
 
 **Step 1: Indexing (offline, done once)**
