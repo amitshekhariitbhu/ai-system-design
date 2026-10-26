@@ -2209,7 +2209,7 @@ Example: We are building a resume parser. We want the LLM to read a resume and r
 
 If we just ask the LLM "give me JSON", sometimes it returns proper JSON, sometimes it adds extra text like "Sure, here is the JSON:", and sometimes it returns broken JSON.
 
-To fix this, modern APIs support **structured output** (also called JSON mode or constrained decoding):
+To fix this, modern APIs support **structured output** (also called JSON mode or [constrained decoding](https://outcomeschool.com/blog/constrained-decoding)):
 
 - We send the schema we want.
 - The inference server forces the model to output only valid JSON that matches the schema.
