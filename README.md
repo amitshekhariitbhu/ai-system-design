@@ -1555,7 +1555,7 @@ Now, let's understand context engineering. Because of these effects, the discipl
 
 **Context Engineering is the practice of designing, organizing, and managing everything that goes into an LLM's context window so that the model can do its task reliably.**
 
-It is the next layer above prompt engineering. Prompt engineering is about the wording of one instruction. Context engineering is about everything the model sees: the system prompt, the retrieved chunks, the tool definitions, the tool results, the memory, and the conversation history. Context engineering decides:
+It is the next layer above [prompt engineering](https://outcomeschool.com/blog/prompt-engineering). Prompt engineering is about the wording of one instruction. Context engineering is about everything the model sees: the system prompt, the retrieved chunks, the tool definitions, the tool results, the memory, and the conversation history. Context engineering decides:
 
 - What information to include
 - What information to exclude
