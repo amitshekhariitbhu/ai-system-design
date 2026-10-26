@@ -1237,6 +1237,8 @@ Vector search is great at finding meaning. But it is bad at exact-match queries 
 
 For exact-match, the old keyword search ([**BM25**](https://outcomeschool.com/blog/bm25) - Best Matching 25) is much better. Keyword search finds documents fast using an inverted index, which maps each word to the list of documents that contain it. We have a detailed blog on [How does an Inverted Index work?](https://outcomeschool.com/blog/inverted-index).
 
+BM25 is a sparse method: one position per word, almost all zeros. Vector search uses dense embeddings: a fixed number of positions, all non-zero. We have a detailed blog on [How do sparse and dense embeddings differ?](https://outcomeschool.com/blog/sparse-vs-dense-embeddings)
+
 So in production RAG, we use [**Hybrid Search**](https://outcomeschool.com/blog/how-does-hybrid-search-work): run both vector search and BM25, combine the scores, and return the best results from both.
 
 The two lists have scores on different scales, so we cannot just add them. A popular way to merge them is **Reciprocal Rank Fusion (RRF)**, which ignores the raw scores and only uses the position of each chunk in each list. A chunk that ranks high in both lists ends up at the top.
