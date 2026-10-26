@@ -2637,6 +2637,8 @@ We also have a detailed blog on [How does a voice AI agent answer a phone call?]
 
 We have a detailed blog on [How do SIP and RTP carry a phone call to a voice agent?](https://outcomeschool.com/blog/sip-and-rtp) that explains how SIP rings the voice agent and agrees on the audio format with SDP, how RTP carries the voice in small packets with sequence numbers and timestamps, what the agent does with those packets, and how the call ends.
 
+We also have a detailed blog on [Why does phone audio make speech recognition worse?](https://outcomeschool.com/blog/phone-audio-and-speech-recognition) that explains how a phone call cuts off the high sounds of our voice, how the codec, lost packets, and noise damage the audio further, why a model trained on clean audio struggles with phone audio, and what we can do to make speech recognition work better on phone calls.
+
 Modern providers expose **Realtime APIs** that bundle all three: OpenAI Realtime API, Amazon Polly Bidirectional Streaming, Deepgram Voice Agent, Inworld, Soniox, x.ai Voice. These collapse STT, LLM, and TTS into a single low-latency pipeline.
 
 Latency targets in voice AI are tight. End-to-end speech-to-speech latency under 800 ms feels conversational. Above 1.5 s feels broken. This is much tighter than text chat.
