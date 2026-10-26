@@ -1947,6 +1947,7 @@ Not all AI Agents look the same. Most reuse a small set of patterns:
 - **[Agentic RAG](https://outcomeschool.com/blog/agentic-rag):** The agent decides when and how to retrieve documents, then uses them to answer.
 - **[Multi-Agent System](https://outcomeschool.com/blog/multi-agent-systems):** Several agents with different roles work together. One researches, another writes, another reviews.
 - **[Computer Use / Browser Agent](https://outcomeschool.com/blog/how-do-computer-use-agents-work):** The agent sees a screenshot of the screen, decides where to click and what to type, and drives the mouse and keyboard like a human. Example: [Claude Code](https://outcomeschool.com/blog/how-does-claude-code-work) (Computer Use is now in Claude Code).
+- **[Deep Research Agent](https://outcomeschool.com/blog/deep-research-agent):** The agent breaks a big question into smaller questions, searches the web and reads many sources in rounds, reflects to find what is still missing, and writes a long report with citations.
 
 These are not mutually exclusive. A real system often combines patterns - for example, a ReAct agent that uses Agentic RAG for knowledge lookups, with a Reflection step at the end for quality.
 
