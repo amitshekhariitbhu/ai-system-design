@@ -3175,7 +3175,7 @@ We try many fine-tuning runs with different hyperparameters. We track each run w
 
 ### Model Registry
 
-After training, we save the model with a version. The inference server can pull the right version.
+After training, we save the model with a version. The inference server can pull the right version. We have a detailed blog on [How does a Model Registry work?](https://outcomeschool.com/blog/model-registry) that explains how it tracks every model version and its lineage.
 
 ### Evaluation
 
