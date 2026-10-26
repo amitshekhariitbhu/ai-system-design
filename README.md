@@ -403,7 +403,7 @@ In regular system design, a server runs our application code and returns a respo
 
 In AI System Design, we have something called the **Inference Server**.
 
-An inference server is a special kind of server that runs the LLM. It loads the model into the GPU memory and serves prediction requests.
+An inference server is a special kind of server that runs the LLM. It loads the model into the GPU memory and serves prediction requests. We have a detailed blog on [Model Serving](https://outcomeschool.com/blog/model-serving) that explains how serving works step by step.
 
 Most teams do not write the inference server from scratch. They use famous open-source ones like:
 
