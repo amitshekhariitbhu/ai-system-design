@@ -1235,7 +1235,7 @@ Even with good chunking, a chunk can lose its context. A chunk that says "Revenu
 
 Vector search is great at finding meaning. But it is bad at exact-match queries like "Order ID 12345" or "Section 4.2.1".
 
-For exact-match, the old keyword search (**BM25** - Best Matching 25) is much better.
+For exact-match, the old keyword search (**BM25** - Best Matching 25) is much better. Keyword search finds documents fast using an inverted index, which maps each word to the list of documents that contain it. We have a detailed blog on [How does an Inverted Index work?](https://outcomeschool.com/blog/inverted-index).
 
 So in production RAG, we use [**Hybrid Search**](https://outcomeschool.com/blog/how-does-hybrid-search-work): run both vector search and BM25, combine the scores, and return the best results from both.
 
