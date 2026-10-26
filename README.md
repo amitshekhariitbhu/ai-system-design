@@ -2641,6 +2641,8 @@ We also have a detailed blog on [Why does phone audio make speech recognition wo
 
 We have a detailed blog on [How does DTMF keypad input work in a voice agent?](https://outcomeschool.com/blog/dtmf-in-voice-agents) that explains how every key press becomes two tones, how the tones reach the agent inside the audio or as separate events, how the agent collects the digits and passes them to the LLM, and how sensitive digits like a PIN stay away from the LLM.
 
+We also have a detailed blog on [How does voicemail and answering machine detection work?](https://outcomeschool.com/blog/answering-machine-detection) that explains how an outbound voice agent finds out whether a live person or a voicemail picked up, how timing rules on speech and silence catch many machines, how the beep is found, how an audio model and the transcript make the decision more accurate, and where the detection fails.
+
 Modern providers expose **Realtime APIs** that bundle all three: OpenAI Realtime API, Amazon Polly Bidirectional Streaming, Deepgram Voice Agent, Inworld, Soniox, x.ai Voice. These collapse STT, LLM, and TTS into a single low-latency pipeline.
 
 Latency targets in voice AI are tight. End-to-end speech-to-speech latency under 800 ms feels conversational. Above 1.5 s feels broken. This is much tighter than text chat.
