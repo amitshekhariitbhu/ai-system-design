@@ -1814,7 +1814,7 @@ A good embedding pipeline is incremental. It only processes what is new or chang
 
 ### Choosing an Embedding Model
 
-Now, let's pick the right embedding model. The embedding model decides the quality of our retrieval. A bad embedding model means even the best vector DB returns junk. Common production options in 2026:
+Now, let's pick the right embedding model. We have a detailed blog on [How does an embedding model work?](https://outcomeschool.com/blog/embedding-model) that explains how it turns text into a vector. The embedding model decides the quality of our retrieval. A bad embedding model means even the best vector DB returns junk. Common production options in 2026:
 
 - **Voyage AI (Voyage 4 Large):** Currently near the top of the leaderboard for English RAG quality. Uses a Mixture-of-Experts (MoE) architecture, which keeps serving cost meaningfully lower than comparable dense models. Most serious RAG teams move to Voyage when retrieval quality matters more than cost.
 - **OpenAI (text-embedding-3-small / 3-large):** Cheap, simple, and good enough for most apps. text-embedding-3-small is the cheapest viable option from a major provider at $0.02 per million tokens.
