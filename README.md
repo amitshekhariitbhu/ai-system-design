@@ -2587,7 +2587,7 @@ Before sending media to the LLM, we usually:
 
 ### Token Cost
 
-Images, audio, and video take many more tokens than text. A single high-resolution image can cost 1500 to 3000 tokens. A 1-minute audio clip can cost 1000 tokens. Cost tracking has to take this into account.
+Images, audio, and video take many more tokens than text. A single high-resolution image can cost 1500 to 3000 tokens. A 1-minute audio clip can cost 1000 tokens. Cost tracking has to take this into account. We have a detailed blog on [How does a Vision-Language Model (VLM) work?](https://outcomeschool.com/blog/vision-language-model-vlm) that explains how an image is turned into tokens that the LLM can read.
 
 ### Output Modalities
 
